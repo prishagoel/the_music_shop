@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drums</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .description {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      text-align: justify;
+    }
+
+    .bid-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .bid-input {
+      width: 200px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #999999;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button-container button {
+      padding: 10px 20px;
+      background-color: #0099cc;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function openBidPopup() {
+      var bidValue = prompt("Enter your bid amount:");
+      if (bidValue !== null) {
+        bidValue = parseFloat(bidValue);
+        if (!isNaN(bidValue)) {
+          alert("Bid Placed! All the best!");
+        } else {
+          alert("Invalid bid amount. Please enter a valid number.");
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Drums</h1>
+    <img src="https://www.rimmersmusic.co.uk/images/performance-percussion-pp220wr-5-piece-drum-kit-red-p43119-88946_image.jpg" alt="Drums">
+    <div class="description">
+      <p>Crafted with precision and durability in mind, each component of this drum set has been carefully constructed using premium materials. The drums, including the commanding bass drum, versatile snare drum, expressive tom-toms, and resonant floor tom, are expertly crafted from top-quality wood or acrylic. This guarantees both longevity and an impressive range of rich, dynamic sounds that will captivate your audience.
+        The cymbals are equally exceptional. Crafted from premium alloys, the hi-hat, ride, and crash cymbals produce clear, brilliant tones with just the right amount of sustain. Every strike will be imbued with a professional-quality sound that will elevate your drumming to new heights.</p>
+    </div>
+    <div class="bid-container">
+      <label for="topBid">Top bid:</label>
+      <input type="text" id="topBid" value="5000" readonly>
+    </div>
+    <div class="button-container">
+      <button onclick="openBidPopup()">BID</button>
+      <button id="goBack">Back</button>
+            <span id="result"></span>
+                <script type="text/javascript">
+                    document.getElementById("goBack").addEventListener("click", function(event){
+                    event.preventDefault();
+                    document.getElementById("result").innerHTML = "Back";
+                    window.history.back();
+                    });
+                </script> 
+        
+    </div>
+  </div>
+</body>
+</html>

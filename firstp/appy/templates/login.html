@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      background-image: url("https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2017/09/21105618/210917musicstores_06.jpg?w=1200&h=628&fill=blur&fit=fill");
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #777777;
+      margin-top: 0;
+    }
+
+    input[type="text"], input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #999999;
+    }
+
+    .submit-button {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .submit-button input[type="submit"] {
+      padding: 10px;
+      background-color: #0099cc;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-button input[type="submit"]:hover {
+      background-color: #0088bb;
+    }
+
+    .signup-button {
+      margin-top: 10px;
+    }
+
+    .signup-button a {
+      padding: 10px;
+      background-color: #0099cc;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .signup-button a:hover {
+      background-color: #0088bb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Music Shop</h1>
+    <h2>Login</h2>
+    <form>
+      <input type="text" name="name" placeholder="UserName" name="Name">
+      <br>
+      <input type="tel" name="phone" placeholder="Phone Number" name="Phone">
+      <br> 
+      <div class="signup-button">
+        <a href="//127.0.0.1:8000/appy/musicshop/signup">Sign Up</a>
+      </div>
+      <div class="submit-button">
+        <input type="submit" value="Submit" onclick="window.open('//127.0.0.1:8000/appy/musicshop/home')">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      background-image: url("https://wallpapercave.com/wp/wp4292415.jpg");
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #a09f9f;
+    }
+
+    .submit-button {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .submit-button input[type="submit"] {
+      padding: 10px;
+      background-color: #0099cc;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-button input[type="submit"]:hover {
+      background-color: #0088bb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up!</h1>
+    <form id = "signup-form" action = "/appy/musicshop/add-info/" method = "POST">{% csrf_token %}
+      <input type="text" name="username" placeholder="Username">
+      <br>
+      <input type="password" name="password" placeholder="Password">
+      <br>
+      <input type="email" name="email" placeholder="Email">
+      <br>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <br>
+      <input type="submit" value="Submit">
+      
+    </form>
+  </div>
+
+  <script>
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      alert('Records submitted!');
+    });
+  </script>
+</body>
+</html>

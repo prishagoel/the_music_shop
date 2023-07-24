@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Shop</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #555555;
+    }
+
+    .instrument-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .instrument {
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .instrument img {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .instrument img:hover {
+      transform: scale(1.1);
+    }
+
+    .instrument h3 {
+      color: #333333;
+    }
+
+    .instrument p {
+      color: #777777;
+    }
+
+    .instrument span {
+      color: #0099cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Music Shop!</h1>
+  <div class="instrument-container">
+    <div class="instrument">
+      <a href="guitar.html">
+        <img src="https://th.bing.com/th/id/OIP.V91qXzrIVXxAiXc4U-bsTAHaLH?pid=ImgDet&rs=1" alt="Guitar">
+        <h3>Guitar</h3>
+        <p>Price: <span>$299</span></p>
+      </a>
+    </div>
+    <div class="instrument">
+      <a href="piano.html">
+        <img src="https://ca.yamaha.com/en/files/006_A_CX_series_1080_1080_1080x1080_d395a73f1eec576e0c273eac8f544429.jpg" alt="Piano">
+        <h3>Piano</h3>
+        <p>Price: <span>$999</span></p>
+      </a>
+    </div>
+    <div class="instrument">
+      <a href="//127.0.0.1:8000/appy/musicshop/home/drums">
+        <img src="https://www.rimmersmusic.co.uk/images/performance-percussion-pp220wr-5-piece-drum-kit-red-p43119-88946_image.jpg" alt="Drums">
+        <h3>Drums</h3>
+        <p>Price: <span>$499</span></p>
+      </a>
+    </div>
+    <div class="instrument">
+      <a href="violin.html">
+        <img src="https://th.bing.com/th/id/R.a77c7c48b554b689fd8321dd695735c9?rik=rdID2rlqSCD0Lw&riu=http%3a%2f%2fvirtuosiviolins.co.uk%2fwp-content%2fuploads%2f2017%2f11%2fIMG_0599.jpg&ehk=aT0YTjvq5wi7hk7DSb5ZrIv2VlISMsUIMdFJHB7wRJs%3d&risl=&pid=ImgRaw&r=0" alt="Violin">
+        <h3>Violin</h3>
+        <p>Price: <span>$199</span></p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
